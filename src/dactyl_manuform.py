@@ -1973,14 +1973,14 @@ def make_dactyl():
 
     def screw_insert_holes(side='right'):
         return screw_insert_all_shapes(
-            screw_insert_bottom_radius, screw_insert_top_radius, screw_insert_height + .02, offset=-.01, side=side, hole=True
+            screw_insert_bottom_radius, screw_insert_top_radius, screw_insert_height + .02, offset=-.01, side=side, hole=False
         )
 
 
     def screw_insert_outers(side='right'):
         return screw_insert_all_shapes(
-            screw_insert_bottom_radius + 1.6,
-            screw_insert_top_radius + 1.6,
+            screw_insert_bottom_radius + 2.25,
+            screw_insert_top_radius + 2.25,
             screw_insert_height + 1.5,
             side=side
         )
